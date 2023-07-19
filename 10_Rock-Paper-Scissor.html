@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="10_Rock-Paper-Scissor.css">
+</head>
+
+<body>
+
+    <div >
+        <p>Rock Paper Scissor Game</p>
+
+        
+        <button class="move-button" onclick=" const computerMove = pickCompurtmove();
+                                        playGame('Rock');">
+        <img  class="move-icon" src="rock-emoji.png" alt="">
+        </button>
+
+
+        <button class="move-button" onclick="const computerMove = pickCompurtmove();
+                                        playGame('Paper');">
+        <img class="move-icon" src="paper-emoji.png" alt="">
+        </button>
+
+        <button class="move-button" onclick="const computerMove = pickCompurtmove();
+                                        playGame('Scissor');">
+            
+            <img class="move-icon" src="Scissor-emoji.png" alt="">
+        </button>
+
+        <p class="js-winner winner">
+            
+        </p>
+        <p class="js-moves">
+            <!-- you
+            <img class="move-icon" src="paper-emoji.png" alt="">
+            <img class="move-icon" src="rock-emoji.png" alt="">
+            Computer -->
+        </p>
+        <p class="js-score score">
+
+        </p>
+
+        <button class="reset-button" onclick="
+        score.wins = 0;
+        score.loose = 0;
+        score.ties = 0;
+        
+        localStorage.removeItem('score');
+        updateScoreElement();
+        ">
+            Reset Score
+        </button>
+
+
+        <!-- <p>Amazon Shipping Calculator</p>
+
+        <input type="number" placeholder="cost of order" class="js-cost-input"
+        onkeydown="
+        handlecostKeyDown(event);
+        ">
+        
+        <button onclick="calculateShippng()">
+            Calculate
+        </button> -->
+
+        <p class="js-total-cost"></p>
+
+    </div>
+
+
+    <script src="10_Rock-Paper-Scissors.js">
+
+       
+        // window.alert('');
+        // window.console('');
+        // window.document;
+
+        // function handlecostKeyDown(event){
+        //     console.log(event.key)
+        //     if (event.key === 'Enter') {
+        //         calculateShippng()
+        //     }
+        // }
+
+        // function calculateShippng(){
+        //     const inputElement = document.querySelector('.js-cost-input');
+        //     let cost = Number(inputElement.value);
+
+        //     if(cost<40){
+        //         cost = cost + 10;
+        //     }
+        //     document.querySelector('.js-total-cost')
+        //         .innerHTML = `₹${cost}`;
+        // }
+
+
+
+
+
+
+        //convert the string to object using JSON.parse
+
+      
+    </script>
+</body>
+
+</html>
+
